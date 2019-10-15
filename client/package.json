@@ -1,0 +1,58 @@
+{
+    "name": "mysql-react-boilerplate",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@material-ui/core": "^1.3.0",
+        "ajv": "^6.10.2",
+        "axios": "^0.18.1",
+        "bootstrap": "^4.3.1",
+        "build": "^0.1.4",
+        "formik": "^1.5.8",
+        "history": "^4.10.1",
+        "jquery": "^3.4.1",
+        "mdb-cli": "^1.1.20",
+        "popper.js": "^1.15.0",
+        "react": "^16.10.2",
+        "react-confetti": "^4.0.1",
+        "react-dom": "^16.10.2",
+        "react-router-dom": "^4.3.1",
+        "react-scripts": "^3.2.0",
+        "react-strap": "0.0.1",
+        "react-use": "^12.3.0",
+        "reactstrap": "^8.0.1",
+        "underscore": "^1.9.1",
+        "yup": "^0.27.0"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test --env=jsdom",
+        "eject": "react-scripts eject"
+    },
+    "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+    "main": "client/src/index.js",
+    "repository": {
+        "type": "git",
+        "url": "mysql-boilerplate"
+    },
+    "keywords": [
+        "mysql",
+        "boilerplate"
+    ],
+    "author": "Amy Murphy",
+    "license": "ISC",
+    "proxy": "http://localhost:9000/",
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
+}

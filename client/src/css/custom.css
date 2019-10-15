@@ -1,0 +1,526 @@
+    body {
+        background-color: #0063BA!important;
+        height: 100%;
+        width: 100%;
+        line-height: 1em;
+    }
+    
+    .link {
+        cursor: pointer;
+    }
+    
+    .navbar {
+        /* background-color: #00388F; */
+        background-color: #00006B;
+        border-bottom: 8px solid #004FB7;
+    }
+    
+    .successful-word {
+        border-color: #28a745!important;
+        border-style: solid;
+        border-width: 10px !important;
+        margin-bottom: 10px;
+    }
+    
+    .homeBtnHolder {
+        background-color: #004FB7;
+    }
+    
+    .text-black,
+    a.text-black:link,
+    a:text-black:active,
+    a.text-black:visited {
+        color: #000 !important;
+    }
+    
+    .btn-white,
+    .btn-white:visited {
+        background-color: #fff !important;
+    }
+    
+    .btn-white:hover {
+        background-color: #eee !important;
+    }
+    
+    .btn-white:active {
+        background-color: #ddd !important;
+    }
+    
+    .example-enter {
+        opacity: 0;
+        transform: translate(-250px, 0);
+        transform: translate3d(-250px, 0, 0);
+    }
+    
+    .example-enter.example-enter-active {
+        opacity: 1;
+        transition: opacity 1s ease;
+        transform: translate(0, 0);
+        transform: translate3d(0, 0, 0);
+        transition-property: transform, opacity;
+        transition-duration: 300ms;
+        transition-timing-function: cubic-bezier(0.175, 0.665, 0.320, 1), linear;
+    }
+    
+    .example-leave {
+        opacity: 1;
+        transform: translate(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        transition-property: transform, opacity;
+        transition-duration: 300ms;
+        transition-timing-function: cubic-bezier(0.175, 0.665, 0.320, 1), linear;
+    }
+    
+    .example-leave.example-leave-active {
+        opacity: 0;
+        transform: translate(250px, 0);
+        transform: translate3d(250px, 0, 0);
+    }
+    
+    .fadeIn-enter {
+        opacity: 0.01;
+    }
+    
+    .fadeIn-enter.fadeIn-enter-active {
+        opacity: 1;
+        transition: opacity 500ms ease-in;
+    }
+    
+    .fadeIn-leave {
+        opacity: 1;
+    }
+    
+    .fadeIn-leave.fadeIn-leave-active {
+        opacity: 0.01;
+        transition: opacity 300ms ease-in;
+    }
+    
+    .fadeIn-appear {
+        opacity: 0.01;
+    }
+    
+    .fadeIn-appear.fadeIn-appear-active {
+        opacity: 1;
+        transition: opacity .5s ease-in;
+    }
+    
+    .slide-appear,
+    .slide-enter {
+        opacity: 0;
+        transform: translateX(-350px);
+    }
+    
+    .slide-appear.slide-appear-active,
+    .slide-enter.slide-enter-active {
+        opacity: 1;
+        transform: translateX(0);
+        transition: 0.5s;
+    }
+    
+    .slide-leave {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+    .slide-leave.slide-leave-active {
+        opacity: 0;
+        transform: translateX(250px);
+        transition: 0.5s;
+    }
+    
+    .rotateleft {
+        -webkit-transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+    
+    .rotateright {
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        transform: rotate(10deg);
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    
+    .letterBox {
+        min-height: 100%;
+        padding-bottom: 10px;
+    }
+    
+    .buttonListWords {
+        font-family: clone-rounded-latin, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 2.5em;
+        line-height: 1em;
+    }
+    
+    .letter {
+        font-size: 1.5em;
+        color: #000;
+        border-bottom: 1px solid black;
+    }
+    
+    .letter-game,
+    .letter-game-choices,
+    .letter,
+    h1.vag {
+        font-family: vag-rundschrift-d, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+    
+    .logotext {
+        font-family: clone-rounded-latin, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+    
+    .backbtn {
+        width: 100%;
+    }
+    
+    .letterbtn {
+        min-width: 100px;
+    }
+    
+    .wordbtn {
+        background-color: #28a745;
+    }
+    
+    .specwordletters {
+        min-width: 100px;
+    }
+    
+    .imgholder {
+        margin-left: 6px;
+        width: 50px;
+        height: 50px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    @-webkit-keyframes jiggle {
+        0% {
+            -webkit-transform: rotate(0.5deg);
+            -moz-transform: rotate(0.5deg);
+            -ms-transform: rotate(0.5deg);
+            -o-transform: rotate(0.5deg);
+            transform: rotate(0.5deg)
+        }
+        25% {
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg)
+        }
+        50% {
+            -webkit-transform: rotate(-0.5deg);
+            -moz-transform: rotate(-0.5deg);
+            -ms-transform: rotate(-0.5deg);
+            -o-transform: rotate(-0.5deg);
+            transform: rotate(-0.5deg)
+        }
+        100% {
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg)
+        }
+    }
+    
+    @-moz-keyframes jiggle {
+        0% {
+            -webkit-transform: rotate(0.5deg);
+            -moz-transform: rotate(0.5deg);
+            -ms-transform: rotate(0.5deg);
+            -o-transform: rotate(0.5deg);
+            transform: rotate(0.5deg)
+        }
+        25% {
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg)
+        }
+        50% {
+            -webkit-transform: rotate(-0.5deg);
+            -moz-transform: rotate(-0.5deg);
+            -ms-transform: rotate(-0.5deg);
+            -o-transform: rotate(-0.5deg);
+            transform: rotate(-0.5deg)
+        }
+        100% {
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg)
+        }
+    }
+    
+    @-o-keyframes jiggle {
+        0% {
+            -webkit-transform: rotate(0.5deg);
+            -moz-transform: rotate(0.5deg);
+            -ms-transform: rotate(0.5deg);
+            -o-transform: rotate(0.5deg);
+            transform: rotate(0.5deg)
+        }
+        25% {
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg)
+        }
+        50% {
+            -webkit-transform: rotate(-0.5deg);
+            -moz-transform: rotate(-0.5deg);
+            -ms-transform: rotate(-0.5deg);
+            -o-transform: rotate(-0.5deg);
+            transform: rotate(-0.5deg)
+        }
+        100% {
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg)
+        }
+    }
+    
+    @keyframes jiggle {
+        0% {
+            -webkit-transform: rotate(0.5deg);
+            -moz-transform: rotate(0.5deg);
+            -ms-transform: rotate(0.5deg);
+            -o-transform: rotate(0.5deg);
+            transform: rotate(0.5deg)
+        }
+        25% {
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg)
+        }
+        50% {
+            -webkit-transform: rotate(-0.5deg);
+            -moz-transform: rotate(-0.5deg);
+            -ms-transform: rotate(-0.5deg);
+            -o-transform: rotate(-0.5deg);
+            transform: rotate(-0.5deg)
+        }
+        100% {
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg)
+        }
+    }
+    
+    .imageBtnHolder:hover div img {
+        animation: jiggle 0.25s linear infinite
+    }
+    
+    .letterbtn:before {
+        pointer-events: none;
+        position: absolute;
+        z-index: -1;
+        content: '';
+        top: 100%;
+        left: 5%;
+        height: 10px;
+        width: 90%;
+        opacity: 0;
+        background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+        background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+        /* W3C */
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform, opacity;
+        transition-property: transform, opacity;
+    }
+    
+    .letterbtn:hover,
+    .letterbtn:focus,
+    .letterbtn:active {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+        /* move the element up by 5px */
+    }
+    
+    .letterbtn:hover:before,
+    .letterbtn:focus:before,
+    .letterbtn:active:before {
+        opacity: 1;
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+        /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+    }
+    
+    .letterbtn:hover,
+    .letterbtn:focus,
+    .letterbtn:active {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    }
+    /*** MEDIA QUERIES ***/
+    
+    @media (min-width:320px) {
+        /* smartphones, iPhone, portrait 480x320 phones */
+        .letterbtn {
+            min-width: 38px;
+        }
+        .logotext {
+            font-size: 1.6em;
+            line-height: 1em;
+        }
+        .backbtn {
+            width: 40%;
+        }
+        .words {
+            max-width: 120px;
+        }
+        .letter-game {
+            font-size: 4em;
+            line-height: 1.em;
+            border-bottom: 1px solid black;
+        }
+        .letter-game-choices {
+            font-size: 2em;
+            line-height: 1.em;
+            border-bottom: 1px solid black;
+        }
+        .wordbtn {
+            width: 90%;
+        }
+        .buttonListWords {
+            font-size: 1.8em;
+        }
+        .letter {
+            font-size: 1em;
+        }
+        .imgholder {
+            width: 0px;
+            height: 0px;
+        }
+    }
+    
+    @media (min-width:360px) {
+        .logotext {
+            font-size: 1.9em;
+        }
+        .buttonListWords {
+            font-size: 2.2em;
+        }
+        .letter {
+            font-size: 1.2em;
+        }
+    }
+    
+    @media (min-width:410px) {
+        /* smartphones, iPhone, portrait 480x320 phones */
+        .logotext {
+            font-size: 2.2em;
+            line-height: 1em;
+        }
+        .imgholder {
+            width: 50px;
+            height: 50px;
+        }
+    }
+    
+    @media (min-width:481px) {
+        /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+        .logotext {
+            font-size: 2.2em;
+            line-height: 1em;
+        }
+        .backbtn {
+            width: 50%;
+        }
+    }
+    
+    @media (min-width:641px) {
+        /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+        .logotext {
+            font-size: 3em;
+            line-height: 1em;
+        }
+        .words {
+            max-width: 150px;
+        }
+        .letter-game {
+            font-size: 5em;
+            line-height: 1.em;
+            border-bottom: 1px solid black;
+        }
+        .letter-game-choices {
+            font-size: 3.3em;
+            line-height: 1.em;
+            border-bottom: 1px solid black;
+        }
+        .buttonListWords {
+            font-size: 3em;
+        }
+        .letter {
+            font-size: 1.5em;
+        }
+    }
+    
+    @media (min-width:961px) {
+        /* tablet, landscape iPad, lo-res laptops ands desktops */
+        .logotext {
+            font-size: 3.5em;
+            line-height: 1em;
+        }
+        .words {
+            max-width: 190px;
+        }
+        .letter-game-choices {
+            font-size: 2.5em;
+            line-height: 1.em;
+            border-bottom: 1px solid black;
+        }
+        .letter-game {
+            font-size: 6em;
+            line-height: 1.em;
+            border-bottom: 1px solid black;
+            width: 250px;
+        }
+        .letter-game-choices {
+            font-size: 3.5em;
+            line-height: 1.em;
+            border-bottom: 1px solid black;
+        }
+        .wordbtn {
+            width: 80%;
+        }
+    }
+    
+    @media (min-width:1025px) {
+        /* big landscape tablets, laptops, and desktops */
+        .wordbtn {
+            width: 48%;
+        }
+        .letter-game {
+            width: 250px;
+        }
+        .words {
+            max-width: 300px;
+        }
+    }
+    
+    @media (min-width:1281px) {
+        /* hi-res laptops and desktops */
+    }
